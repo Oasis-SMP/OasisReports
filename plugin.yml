@@ -1,0 +1,68 @@
+name: OasisReports
+main: net.charter.orion_pax.OasisReports.OasisReports
+version: 1.0
+description: Grief reporting system.
+author: Paxination
+commands:
+
+  report:
+    description: The Report command!
+    usage: "Usage: /<command> OMG THEY GRIEFED ME!"
+    permission: oasisreports.report
+    permission-message: You don't have permissions for <permission>
+    
+  links:
+    description: Shows a list of links the server uses!
+    usage: "Usage: /<command>"
+    permission: oasisreports.links
+    permission-message: You don't have permissions for <permission>
+    
+  vote:
+    description: Shows 2 links to go vote at!
+    usage: "Usage: /<command>"
+    permission: oasisreports.links
+    permission-message: You don't have permissions for <permission>
+    
+  donate:
+    description: Shows a link to go donate at!
+    usage: "Usage: /<command>"
+    permission: oasisreports.links
+    permission-message: You don't have permissions for <permission>
+    
+  forums:
+    description: Shows a link to the forums!
+    usage: "Usage: /<command>"
+    permission: oasisreports.links
+    permission-message: You don't have permissions for <permission>
+    
+  member:
+    description: Shows a link to the member tutorial!
+    usage: "Usage: /<command>"
+    permission: oasisreports.links
+    permission-message: You don't have permissions for <permission>
+    
+  teamspeak:
+    description: Shows the IP to our TS server and a link to download the client!
+    usage: "Usage: /<command>"
+    permission: oasisreports.links
+    permission-message: You don't have permissions for <permission>
+    
+permissions:
+    oasisreports.links:
+        description: Oasisreports links permnode!
+        
+    oasisreports.staff:
+        description: Oasis staff perm node!
+        children:
+            oasisreports.list: true
+            oasisreports.clear: true
+            oasisreports.check: true
+            
+    oasisreports.list:
+        description: Shows a list of reports.
+    oasisreports.clear:
+        description: Clears a single report out.
+    oasisreports.check:
+        description: TP's you to the site of a report!
+    oasisreports.clearall:
+        description: Clears the entire reports list!
